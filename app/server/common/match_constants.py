@@ -1,10 +1,10 @@
 class MatchConstants:
-
-    HTTP_ERROR = "HttpError"
+    HTTP_SUCCESS = "SUCCESS"
+    HTTP_FAIL = "FAIL"
+    HTTP_ERROR = "ERROR"
     DNSLOOKUP_ERROR = "DNSLookupError"
     TIMEOUT_ERROR = "TimeoutError"
     CONNECTION_LOST = "ConnectionLost"
-
 
     TYPE_OP_SAVE_OR_FIND_ERROR_BY_CHAMPIONSHIP_JOB = "OP_SAVE_OR_FIND_COLLECTION"
     TYPE_OP_FIND_ERRORS = "OP_FIND_ERRORS"
@@ -13,13 +13,20 @@ class MatchConstants:
     HTTP_CLIENT_SUCCESS_200 = "Client OK: Request Executed"
     HTTP_CLIENT_ERROR_404 = "Client Error: Resource not found"
     HTTP_CLIENT_ERROR_401 = "Client Error: Unauthorized access"
+    HTTP_CLIENT_ERROR_422 = "Client Error: Unprocessable Entity"
     HTTP_CLIENT_ERROR_500 = "Server Error: Internal Error"
 
+    HTTP_ERROR_UNPROCESSABLE_ENTITY = 422
     HTTP_SUCCESS_STATUS = 200
     HTTP_ERROR_INTERNAL_CODE = 500
     HTTP_ERROR_BAD_GATEWAY_CODE = 502
     HTTP_ERROR_UNAVAILABLE_CODE = 503
     HTTP_ERROR_TIMEOUT_CODE = 504
 
+    GET_REQ_TYPE = "GET"
+    POST_REQ_TYPE = "POST"
 
+    PROCESS_TYPE_ETL = "ETL"
+    PROCESS_TYPE_SCRAPY = "SCRAPY"
+    PROCESS_TYPE_WS = "WEBSERVICE"
 

@@ -1,10 +1,10 @@
 {
     "action": "CreateSubmissionRequest",
-    "appResource": "/opt/spark-runtime/spark-app/py-resultmatch-etl",
+    "appResource": "P0",
     "clientSparkVersion": "3.5.3",
     "mainClass": "org.apache.spark.deploy.SparkSubmit",
     "environmentVariables": {"SPARK_ENV_LOADED":"1"},
-    "appArgs": ["--py-files","/opt/spark-runtime/spark-app/py-resultmatch-etl", "/opt/spark-runtime/spark-app/py-resultmatch-etl/__main__.py", "P1", "P2"],
+    "appArgs": ["--py-files","P1", "P2", "P3", "P4"],
     "sparkProperties": {
         "spark.driver.supervise": "false",
         "spark.master": "spark://172.18.0.2:6066",
